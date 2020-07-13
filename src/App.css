@@ -2,6 +2,126 @@
   text-align: center;
 }
 
+.My-cart{
+  width: 100px;
+  font-size: larger;
+}
+.root{
+  --mainBlue:#2a2a72;
+  --lightBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#ffa400;
+}
+body{
+ font-family: "Oswald" , sans-serif !important;
+ background: var(--mainWhite) !important;
+ color:var( --mainDark) !important;
+}
+.cartButton{
+  text-transform: capitalize;
+  font-size:1.4 rem;
+  background: transparent;
+  border:0.05rem solid var(--lightBlue);
+  color:var(--lightBlue);
+  border-radius:0.5 rem;
+  padding: 0.2 rem o.5rem;
+  cursor:pointer;
+  margin:0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out;
+  
+}
+.cartButton:hover{
+    background: var(--lightBlue);
+    color: var(--mainBlue);
+}
+.card{
+  border-color:trasparent;
+  transition:all is linear;
+}
+.cart:hover .cart {
+  border: 0.04rem solid rgba (0,0,0,0,2);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+}
+.cart:hover .cart-footer{
+  background: rgba(247,247,247);
+}
+.cart-footer{
+  background:transparent;
+  border-top:transparent;
+  transition: all is linear;
+}
+.img-container{
+  position: relative;
+  overflow:hidden;
+}
+.card-img-top{
+  transition: all is linear;
+}
+.img-container:hover .card-img-top{
+  transform: scale(1.2); 
+}
+.cart-btn{
+  position:absolute;
+  bottom:0;
+  right:0;
+  padding:0.2rem 0.4rem;
+  background: var(--lightBlue);
+  border:none;
+  color: var(--mainWhite);
+  font-size: 1.4rem;
+  border-radius: 0.5rem 0 0 0;
+  transform: translate(100% , 100%);
+  transition: all is linear;
+}
+.img-container:hover .card-btn{
+  transform: translate(0,0);
+}
+.cart-btn:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.model{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .cart-icon{
+   cursor: pointer;
+   font-size: 1.2rem;
+   color:var(--mainYellow) !important;
+ }
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color:var(--mainDark);
+  border-radius:0 !important;
+  border:0.1rem solid var(--mainDark) !important;
+  }
+  .btn-black:hover {
+    background: var(--mainDark) !important;
+    color : var(--mainWhite) !important;
+  }
+
+.text-title{
+  font-family: "Permanent Marker" , cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.text-blue{
+  color:var(--mainBlue);
+}
+.text-bright{
+  color:var(--lightBlue);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
